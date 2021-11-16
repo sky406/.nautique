@@ -1,4 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <!-- TODO add all the classes and ids -->
+    <head>
+        <link href=".css\assets.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Nautique</title>
+        
+    </head>
+    <body>
+        <div>
+            <!-- this is supposed to be the div with a coursel of images subject to change  -->
+            <!-- alternitive idea is to have a nice image to go with the theme -->
+            <nav>
+                <!-- TODO make this aligned right by all means -->
+                <ul>
+                    <li><a> Reserve a table</a></li>
+                    <li><a>Menu</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </nav>
+            <img alt="Nautique logo">
+            <button></button>
+            <!-- TODO make and insert logo  -->
+            <div>
+                <!-- maybe put a featured on list here maybe not, we'll see -->
+            </div>
+        </div>
+        <div>
+            <!-- this is the main body  -->
+            <div class="container"> 
+                <!-- this is a continer for the other parts the css is only there to make it easier  -->
+                <div class="row">
+                    <!-- thsese are gonna be interchangeble -->
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- this is the gallery image list -->
+                <!-- this is supposed to contain a lot of images -->
+                <div class="row">
+                    <!-- TODO fill this with images -->
+                </div>
+                <div class="row"></div>
+            </div>
+            <div id="google-map"></div>
+        </div>
+        <div id="foot">
+            <!-- this is the end of the mainpage, with contant info and other links at the bottom  -->
+        </div>
+    </body>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg
+        &callback=initMap">
+    </script>
+    <script type="text/javascript">
+        // TODO change thecoordinates to make this work correctly
+
+        // google api key - uiniquie id creted by google for app to use their services
+        function initMap() {
+            var mylocation ={lat: 69.42000, lng: -69.420}
+            var mymap = new google.maps.Map(document.getElementById("google-map"), {
+                center: mylocation,
+                zoom: 8,
+            });
+            var marker = new google.maps.Marker({
+                position: mylocation,
+                map: mymap
+            });
+            }
+    </script>
 </html>
