@@ -1,0 +1,54 @@
+/* testblock */
+.testblock_holder
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testblock
+{
+   width: 70px;
+   height: 70px; 
+   margin: 1px;
+}
+
+/* colors */
+    .background-main
+    {
+        /* the main background color */
+        background-color: #212026;
+    }
+
+    .background-alt
+    {
+        background-color: #73403c;
+    }
+
+    /* call to action text */
+        .cta_txt
+        {
+            color: #f2a25c;
+        }
+
+        .cta_button
+        {
+            background-color: #f2a25c;
+            flex-grow: 0;
+            border-radius: 13px;
+            box-sizing: border-box;
+            padding: 2px;
+            border-style: none;
+            min-width: 160px;
+            aspect-ratio: 16/9;
+        }
+        .cta_button:hover
+        {
+            background-color: #73403c;
+        }
+
+        .cta_button_txt
+        {
+            color: #212026;
+        }
+
+
