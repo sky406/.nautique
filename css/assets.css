@@ -52,4 +52,9 @@
         }
 
 /* flex things */
+.box
+{
+ aspect-ratio: 1/1;  
+}
+
 
