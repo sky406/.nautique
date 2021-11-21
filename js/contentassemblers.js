@@ -4,13 +4,14 @@
 true iplies that the block ahs a button underr the text*/
 // use style =" image"
 var siteinfo = [
-    [["About us","[insert text here]"],[null,"a cool picture"],[true,"Come dine with us","link"]],
+    [["About us","Lorem ipsum donut"],[null,"a cool picture"],[true,"Come dine with us","link"]],
     [["Our food","[insert text here]"],[null,"some cool seafood"],[true,"Check out our menu","link"]],
     [["Our star chefs","[insert text here]"],[null,"a chef i guess"],[false,null,null]]
     // TODO actually insert the proper info later
     ]
 
-var imagelist = []
+var imagelist = [[null,"alt"],
+    ["this si a terrible url","this is not a ALT"]]
     //TODO add a bunch of image links to make this work
     
 function add_placeholders(number,classes,id)
@@ -102,3 +103,28 @@ function maincontent(id,rows)
     document.getElementById(id).innerHTML=content
 }
 maincontent('main',siteinfo)
+
+function gallerycontent(id,gallery)
+{
+    content=''
+    len=0
+    for(var i = 0; i < gallery.length;i++)
+    {
+        if(len < 10)
+        {
+            content+='<img src="'+gallery[i][0]+'"alt="'+gallery[i][1]+'" class="img box"/>'
+            len+=1
+        }
+        else
+        {
+            break
+        }
+    }
+    if(len < 10)
+    {
+        placeholders = 10-len
+        content+=add_placeholders(placeholders,'box img','gallery')
+    }
+    document.getElementById(id).innerHTML = content
+}
+gallerycontent('gallery', imagelist)
