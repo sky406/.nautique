@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 /* testblock */
 .testblock_holder
 {
@@ -21,6 +22,11 @@
 
     .background-alt
     {
+        background-color: #A64C38;
+    }
+
+    .background-alt2
+    {
         background-color: #73403c;
     }
 
@@ -28,6 +34,11 @@
         .cta_txt
         {
             color: #f2a25c;
+        }
+
+        .cta_txt:hover
+        {
+            color: #73403c;
         }
 
         .cta_button
@@ -40,6 +51,8 @@
             border-style: none;
             min-width: 12px;
             aspect-ratio: 16/9;
+            margin-left: auto;
+            margin-right: auto;
         }
         .cta_button:hover
         {
@@ -54,7 +67,61 @@
 /* flex things */
 .box
 {
- aspect-ratio: 1/1;  
+ aspect-ratio: 1/1;
+ padding: 30px;  
+ display: flex;
 }
+
+.box a,h2,p  
+{
+    text-align: center;
+    color: #A64C38;
+}
+
 /* TODO  add a bunch of css class for this */
 
+/* bootstrap overwrites */
+.txt-normal
+{
+    color: #f27649;
+}
+
+.nav-txt:hover
+{
+    color: #73403c;
+}
+
+.txt
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* transformed text */
+.l-side-txt
+{
+    transform: rotate(90deg);
+}
+
+.r-side-txt
+{
+    transform: rotate(-90deg);
+}
+
+.huge
+{
+    font-size: larger;
+}
+
+.txtbox
+{
+    display: flex;
+}
+.left-align
+{
+    justify-content: flex-start;
+}
+
+.right-align
+{
+    justify-content: flex-end;
+}

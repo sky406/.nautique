@@ -4,7 +4,7 @@
 true iplies that the block ahs a button underr the text*/
 // use style =" image"
 var siteinfo = [
-    [["About us","Lorem ipsum donut"],[null,"a cool picture"],[true,"Come dine with us","link"]],
+    [["About us","Lorem ipsum donut"],[null,"a cool picture"],[true,"Come dine with us","menu.html"]],
     [["Our food","[insert text here]"],[null,"some cool seafood"],[true,"Check out our menu","link"]],
     [["Our star chefs","[insert text here]"],[null,"a chef i guess"],[false,null,null]]
     // TODO actually insert the proper info later
@@ -22,7 +22,7 @@ function add_placeholders(number,classes,id)
     placeholder = ''
     for(var i = 0; i < number; i++)
     {
-        placeholder += "<div class='placeholder "+classes+"' id='"+id+i+ "'></div>"
+        placeholder += "<div class='placeholder background-alt "+classes+"' id='"+id+i+ "'></div>"
     }
     return placeholder
 }
@@ -102,12 +102,12 @@ function maincontent(id,rows)
     }
     document.getElementById(id).innerHTML=content
 }
-maincontent('main',siteinfo)
+// maincontent('main',siteinfo)
 
 function gallerycontent(id,gallery)
 {
-    content=''
-    len=0
+    var content=''
+    var len=0
     for(var i = 0; i < gallery.length;i++)
     {
         if(len < 10)
@@ -123,7 +123,7 @@ function gallerycontent(id,gallery)
     if(len < 10)
     {
         placeholders = 10-len
-        content+=add_placeholders(placeholders,'box img','gallery')
+        content+=add_placeholders(placeholders,'box col-2','gal')
     }
     document.getElementById(id).innerHTML = content
 }
