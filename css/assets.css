@@ -36,10 +36,6 @@
             color: #f2a25c;
         }
 
-        .cta_txt:hover
-        {
-            color: #73403c;
-        }
 
         .cta_button
         {
@@ -124,4 +120,20 @@
 .right-align
 {
     justify-content: flex-end;
+}
+
+
+.menu-block
+{
+    aspect-ratio: 1920/462;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100vw;
+}
+
+.nomargin
+{
+    margin: 0px;
 }
