@@ -34,7 +34,7 @@ function maincontent(id,rows)
     for(var i = 0; i < rows.length;i++)
     {
         console.log('it tried')
-        content +="<div class='row'>"
+        content +="<div class='row justify-content-center'>"
         Text = ''
             //txt
             Text +="<div class='box col-6'>"
@@ -142,25 +142,33 @@ maincontent('main',siteinfo)
 
 function gallerycontent(id,gallery)
 {
-    var content=''
-    var len=0
-    for(var i = 0; i < gallery.length;i++)
+    var content = ''
+    var row1 = ''
+    var len1 = 0
+    var row2 = ''
+    var len2 = 0
+    for(var i = 0 ; i < gallery.length;i++)
     {
-        if(len < 10)
+        if(len1<6)
         {
-            content+='<img src="'+gallery[i][0]+'"alt="'+gallery[i][1]+'" class="img box"/>'
-            len+=1
+            row1+= "<div class='box col-1 galimg' style='background-image:"+ gallery[0]+";background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
+            len1 +=1
+        }
+        else if(len2<6)
+        {
+            row2 +="<div class='box col-1 galimg' style='background-image:"+ gallery[0]+";background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
+            len2+=1
         }
         else
         {
             break
         }
     }
-    if(len < 10)
-    {
-        placeholders = 10-len
-        content+=add_placeholders(placeholders,'box col-2','gal')
-    }
-    document.getElementById(id).innerHTML = content
+    row1 += add_placeholders(6-len1,'col-1 galimg','galplaceholder')
+    row2 += add_placeholders(6-len2,'col-1 galimg','galimg2')
+    content+="<div class='row justify-content-center'>"+row1+"</div>"
+    content+="<dvi class='row justify-content-center'>"+row2+"</div>"
+    content+='<div class="row justify-content-center"><a href="gallery.html" class="cta_link"><button class="cta_button"><span class="txt cta_button_txt">More images</span></button></a>'
+    document.getElementById(id).innerHTML=content
 }
 gallerycontent('gallery', imagelist)

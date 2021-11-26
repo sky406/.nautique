@@ -81,6 +81,7 @@
  align-items: center;
  justify-content: center;
  flex-direction: column;
+ width: 49%;
 }
 
 .box a,h2,p  
@@ -192,4 +193,30 @@
 .container
 {
     padding: 0px;
+}
+
+.content
+{
+   margin-top: 100px;
+   margin-bottom: 100px; 
+}
+
+.galimg
+{
+    margin:10px;
+    height: 200px;
+    width: 15%;
+    aspect-ratio: 1/1
+}
+
+.row
+{
+    --bs-gutter-x:-0.5rem
+}
+
+#google-map
+{
+    width: 95%;
+    height: 500px;
+    margin: auto;
 }

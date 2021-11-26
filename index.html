@@ -45,7 +45,7 @@
             </div>
             <div class="background-main row">
                 <!-- this is the main body  -->
-                <div class="container" id="main"> 
+                <div class="container content" id="main"> 
                     <!-- this all filled by code so idk -->
                     <!-- this is an example but not what is gonna be there -->
                     <div class="row">
@@ -69,11 +69,14 @@
                     </div>
                 </div>
                     
-                <div class="container" id="gallery">
+                <div class="container content" id="gallery">
                     <!-- this is the gallery image list -->
+                    <div class="row justify-content-center">
+                        <div class="placeholder box col-1 background-alt galimg"></div>
+                    </div>
+                
                 </div>
-                <div id="google-map"></div>
-            </div>
+                <div class="row justify-content-center" id="google-map"></div>
             <div id="foot">
                 <!-- this is the end of the mainpage, with contant info and other links at the bottom  -->
             </div>
@@ -93,10 +96,90 @@
             var mymap = new google.maps.Map(document.getElementById("google-map"), {
                 center: mylocation,
                 zoom: 8,
+                styles: [
+      { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
+      {
+        featureType: "administrative.locality",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [{ color: "#263c3f" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#6b9a76" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#38414e" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#212a37" }],
+      },
+      {
+        featureType: "road",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#9ca5b3" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#746855" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#1f2835" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#f3d19c" }],
+      },
+      {
+        featureType: "transit",
+        elementType: "geometry",
+        stylers: [{ color: "#2f3948" }],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#d59563" }],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [{ color: "#17263c" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#515c6d" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#17263c" }],},]
+                
             });
             var marker = new google.maps.Marker({
                 position: mylocation,
-                map: mymap
+                map: mymap,
+                title: "our location"
             });
             }
     </script>
