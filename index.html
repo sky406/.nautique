@@ -12,54 +12,73 @@
         
     </head>
     <body>
-        <div class="top">
-            <!-- this is supposed to be the div with a coursel of images subject to change  -->
-            <!-- alternitive idea is to have a nice image to go with the theme -->
-            <nav>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item"><a class="nav-link txt cta_txt nav-txt" href="reservations.html"> Reserve a table</a></li>
-                    <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="contacts.html">Contact Us</a></li>
-                </ul>
-            </nav>
-
-            <div class="container">
-                <div class="row justify-content-end">
-                    <img src="images\Nautique logo.svg" alt="Nautique logo" class="logoimage">
-                </div>
-                <div class="row justify-content-end">
-                    <a href="reservations.html"><button class="cta_button"><span>Come dine with us</span></button></a>
-                </div>
-                
-            </div>
-            <div>
-                <!-- maybe put a featured on list here maybe not, we'll see -->
-            </div>
-        </div>
         <div class="background-main">
-            <!-- this is the main body  -->
-            <div class="container" id="main"> 
-                <!-- this all filled by code so idk -->
-                <!-- this is an example but not what is gonna be there -->
-                <div class="row">
-                    <div class="box col-6">
-                        <h2 col-12>this is an example</h2>
-                        <p>lorem ipsum donor tonor ditor akjnaodaadjlnaljkdnadadadadda</p>
-                        <button class="cta_button"><span class="cta_button_txt">this is also a test</span></button>
+        <div class="container" id="site">
+            <div class="top bg-white fullwidth col-12"> <!--change bg white to something elese later-->
+                <!-- this is supposed to be the div with a coursel of images subject to change  -->
+                <!-- alternitive idea is to have a nice image to go with the theme -->
+                <nav>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link txt cta_txt nav-txt" href="reservations.html"> Reserve a table</a></li>
+                        <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link txt txt-normal nav-txt" href="contacts.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div id="logobutton">
+                    <div class="row container justify-content-end">
+                    <div class="row container justify-content-center tight nopad">
+                        <div class="row justify-content-end nopad">
+                            <img src="images\Nautique logo.svg" alt="Nautique logo" class="logoimage">
+                        </div>
+                        <div class="row justify-content-end">
+                            <a href="reservations.html" class="cta_link"><button class="cta_button"><span class="txt cta_button_txt">Come dine with us</span></button></a>
+                            
+                        </div>
                     </div>
-                    <div class="box col-6 background-alt"></div>
+                </div>
+                </div>
+                <div>
+                    <!-- maybe put a featured on list here maybe not, we'll see -->
                 </div>
             </div>
-                
-            <div class="container" id="gallery">
-                <!-- this is the gallery image list -->
+            <div class="background-main row">
+                <!-- this is the main body  -->
+                <div class="container" id="main"> 
+                    <!-- this all filled by code so idk -->
+                    <!-- this is an example but not what is gonna be there -->
+                    <div class="row">
+                        <div class="box col-6">
+                            <!-- <h2 col-12>this is an example</h2>
+                            <p>lorem ipsum donor tonor ditor akjnaodaadjlnaljkdnadadadadda</p>
+                            <button class="cta_button"><span class="cta_button_txt">this is also a test</span></button> -->
+                            <div class="container txt-box">
+                                <div class="row justify-content-center">
+                                    <h2 class="txt txt-normal">this is an example</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p class="txt txt-normal">lorem ipsum donor tonor ditor akjnaodaadjlnaljkdnadadadadda</p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <a href="reservations.html" class="cta_link"><button class="cta_button"><span class="txt cta_button_txt">Come dine with us</span></button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box col-6 background-alt"></div>
+                    </div>
+                </div>
+                    
+                <div class="container" id="gallery">
+                    <!-- this is the gallery image list -->
+                </div>
+                <div id="google-map"></div>
             </div>
-            <div id="google-map"></div>
-        </div>
-        <div id="foot">
-            <!-- this is the end of the mainpage, with contant info and other links at the bottom  -->
-        </div>
+            <div id="foot">
+                <!-- this is the end of the mainpage, with contant info and other links at the bottom  -->
+            </div>
+    </div>
+    </div>
     </body>
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg

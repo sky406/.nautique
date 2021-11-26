@@ -41,14 +41,18 @@
         {
             background-color: #f2a25c;
             flex-grow: 0;
-            border-radius: 13px;
+            border-radius: 34px;
             box-sizing: border-box;
-            padding: 2px;
+            padding: 12px;
             border-style: none;
             min-width: 12px;
-            aspect-ratio: 16/9;
+            aspect-ratio: 38/9;
             margin-left: auto;
             margin-right: auto;
+            width: 238px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
         }
         .cta_button:hover
         {
@@ -60,12 +64,23 @@
             color: #212026;
         }
 
+        .cta_link
+        {
+            margin: 0px;
+            display: inline;
+            width: fit-content;
+        }
+
 /* flex things */
 .box
 {
- aspect-ratio: 1/1;
- padding: 30px;  
+ aspect-ratio: 1/1;  
  display: flex;
+ box-sizing: border-box;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
 
 .box a,h2,p  
@@ -137,9 +152,44 @@
 .nomargin
 {
     margin: 0px;
+    margin-left: 0px ;
+    margin-right: 0px;
 }
 
 .logoimage
 {
     width: 300px;
+}
+
+/* layout classes */
+.tight 
+{
+    width: fit-content;
+}
+.nopad
+{
+    padding: 0px;
+}
+
+#site
+{
+    max-width: 1900px;
+}
+
+.fullwidth
+{
+    width: 100%;
+}
+
+#logobutton
+{
+    display: flex;
+    justify-content: end;
+    padding: 40px;
+}
+
+
+.container
+{
+    padding: 0px;
 }
