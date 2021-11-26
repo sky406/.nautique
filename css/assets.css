@@ -87,7 +87,7 @@
 .box a,h2,p  
 {
     text-align: center;
-    color: #A64C38;
+    color: #f27649;
 }
 
 /* TODO  add a bunch of css class for this */
@@ -95,7 +95,7 @@
 /* bootstrap overwrites */
 .txt-normal
 {
-    color: #A64C38;
+    color: #f27649;
 }
 
 .nav-txt:hover
@@ -112,12 +112,13 @@
 /* transformed text */
 .l-side-txt
 {
-    transform: rotate(90deg);
+    text-orientation: sideways;
+    transform: rotate(0deg);
 }
 
 .r-side-txt
 {
-    transform: rotate(-90deg);
+    text-orientation: sideways-right;
 }
 
 .huge
@@ -131,12 +132,12 @@
 }
 .left-align
 {
-    justify-content: flex-start;
+    text-align: left;
 }
 
 .right-align
 {
-    justify-content: flex-end;
+    text-align: right;
 }
 
 
@@ -148,6 +149,7 @@
     margin-top: 35px;
     margin-bottom: 35px;
     width: 100vw;
+    height: 300px;
 }
 
 .nomargin
@@ -220,3 +222,4 @@
     height: 500px;
     margin: auto;
 }
+

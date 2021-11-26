@@ -1,0 +1,15 @@
+.menu
+{
+    padding: 50px;
+}
+
+.menutxt
+{
+    font-size: 17px;
+    /* text-shadow: 1px 1px 12px black; */
+}
+
+.menutitle
+{
+    font-size: 50px;
+}

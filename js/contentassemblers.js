@@ -58,7 +58,7 @@ function maincontent(id,rows)
             }
             else
             {
-                img += "<div class='box col-6' style='background-image:"+ rows[i][1][0]+";background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
+                img += "<div class='box col-6' style='background-image: url("+ rows[i][1][0]+");background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
             }
         if(flip == false)
         {
@@ -151,12 +151,12 @@ function gallerycontent(id,gallery)
     {
         if(len1<6)
         {
-            row1+= "<div class='box col-1 galimg' style='background-image:"+ gallery[0]+";background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
+            row1+= "<div class='box col-1 galimg' style='background-image:url("+ gallery[0]+");background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
             len1 +=1
         }
         else if(len2<6)
         {
-            row2 +="<div class='box col-1 galimg' style='background-image:"+ gallery[0]+";background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
+            row2 +="<div class='box col-1 galimg' style='background-image:url("+ gallery[0]+");background-position: center; background-repeat: no-repeat; background-size: cover;'></div>"
             len2+=1
         }
         else
