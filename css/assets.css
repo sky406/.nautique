@@ -79,7 +79,7 @@
 /* bootstrap overwrites */
 .txt-normal
 {
-    color: #f27649;
+    color: #A64C38;
 }
 
 .nav-txt:hover
@@ -137,4 +137,9 @@
 .nomargin
 {
     margin: 0px;
+}
+
+.logoimage
+{
+    width: 300px;
 }
