@@ -85,6 +85,7 @@
 .nav-txt:hover
 {
     color: #73403c;
+    transition: 2s;
 }
 
 .txt
