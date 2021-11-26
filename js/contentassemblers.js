@@ -4,9 +4,9 @@
 true iplies that the block ahs a button underr the text*/
 // use style =" image"
 var siteinfo = [
-    [["About us","Lorem ipsum donut"],[null,"a cool picture"],[true,"Come dine with us","menu.html"]],
-    [["Our food","[insert text here]"],[null,"some cool seafood"],[true,"Check out our menu","link"]],
-    [["Our star chefs","[insert text here]"],[null,"a chef i guess"],[false,null,null]]
+    [["About us","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis libero et mauris tincidunt, in imperdiet quam cursus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tincidunt tortor id lectus posuere, id feugiat nisi commodo."],[null,"a cool picture"],[true,"Come dine with us","menu.html"]],
+    [["Our food","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis libero et mauris tincidunt, in imperdiet quam cursus. Vestibulum"],[null,"some cool seafood"],[true,"Check out our menu","link"]],
+    [["Our star chefs","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc venenatis libero et mauris tincidunt,"],[null,"a chef i guess"],[false,null,null]]
     // TODO actually insert the proper info later
     ]
 
@@ -43,7 +43,7 @@ function maincontent(id,rows)
             Text +="<div class='row justify-content-center'><p class='txt txt-normal'>"+rows[i][0][1]+"</p></div>"
             if (rows[i][2][0] == true)
             {
-                Text += "<div class='row justify-content-center'><a href='"+rows[1][2][2]+"'class='cta_link'><button class='cta_button'><span class'txt cta_button_txt'>"+ rows[i][2][1] + "</span></button></a></div>"
+                Text += "<div class='row justify-content-center'><a href='"+rows[i][2][2]+"'class='cta_link'><button class='cta_button'><span class'txt cta_button_txt'>"+ rows[i][2][1] + "</span></button></a></div>"
                 Text += "</div></div>"
             }
             else

@@ -124,6 +124,7 @@
 .huge
 {
     font-size: larger;
+    text-align: center;
 }
 
 .txtbox
@@ -223,3 +224,9 @@
     margin: auto;
 }
 
+.top
+{
+    background-image: url(../images/seafoodpasta.png);
+    background-repeat: no-repeat;
+    background-color: white;
+}
